@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <dimen android:name="snackbar_height"
+        tools:ignore="ExtraText">100dp</dimen>
+</resources>

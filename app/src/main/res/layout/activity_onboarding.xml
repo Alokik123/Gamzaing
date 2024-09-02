@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/onboarding_background"
+    android:padding="16dp">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp" />
+
+    <!-- Indicator LinearLayout -->
+    <LinearLayout
+        android:id="@+id/indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/indicator1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/ellipse_selected" />
+
+        <ImageView
+            android:id="@+id/indicator2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/ellipse_unselected" />
+
+        <ImageView
+            android:id="@+id/indicator3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/ellipse_unselected" />
+
+    </LinearLayout>
+
+    <!-- Skip and Next buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/skip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_weight="1"
+            android:gravity="start" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="133dp"
+            android:layout_height="46dp"
+            android:text="Next"
+            android:textSize="16sp"
+            style="@style/AppButtonStyle"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/onboarding"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+</LinearLayout>

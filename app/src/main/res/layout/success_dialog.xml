@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/rounded_dialog_top"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/refer_svg_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/success_refer_svg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Do you have a code\nsuccess"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Done"
+        style="@style/AppButtonStyle"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_light" />
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/no_coupon_text_success"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:text="I don't have a coupon code"-->
+        <!--        android:textSize="10sp"-->
+        <!--        android:textColor="@color/black"-->
+        <!--        android:fontFamily="@font/poppins_medium" />-->
+
+    <TextView
+        android:id="@+id/success_text_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:text="Referral code success"
+        android:textColor="@android:color/holo_green_dark"
+        android:drawableStart="@drawable/ic_check"
+        android:fontFamily="@font/poppins_light" />
+</LinearLayout>

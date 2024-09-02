@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:layout_height="match_parent">
+
+        <!-- Horizontal Progress Bar at the top -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_gravity="top"
+            android:progressDrawable="@drawable/horizontal_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gmail_1" />
+
+        <TextView
+            android:id="@+id/app_web_dev_studio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i2"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Connect with Google and get access to"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/ttandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_web_dev_studio1"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ttandi"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd" />
+
+        <ImageView
+            android:id="@+id/lmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ttandi"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/lmc"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd" />
+
+        <ImageView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lmc"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/tip"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/continue_1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="175dp"
+            android:background="@drawable/dotted_background"
+            android:textSize="20sp"
+            android:backgroundTint="#FF2A17"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            style="@style/AppButtonStyle"
+            android:fontFamily="@font/poppins_light"
+            android:text="continue to google"/>
+</LinearLayout>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:layout_above="@id/apply_button_card"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="28dp"
+                        android:src="@drawable/back_button" />
+
+                    <TextView
+                        android:id="@+id/apply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="28dp"
+                        android:text="Internship Apply Form"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+
+            <!-- First CardView for First Name, Last Name, Phone, I Am -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="16dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- First Name Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name_heading2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="First Name"
+                            android:padding="8dp"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- First Name EditText -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/input111"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:hint="Enter your First name"
+                            android:padding="12dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:background="@android:color/transparent"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Last Name Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lastname_heading1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- Last Name EditText -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/lastname_input1"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:hint="Enter your Last name"
+                            android:padding="12dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:background="@android:color/transparent" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Phone Number Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- Phone Number EditText -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/phone_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:hint="Enter your Phone number"
+                            android:padding="12dp"
+                            android:inputType="number"
+                            android:fontFamily="@font/poppins_light"
+                            android:background="@android:color/transparent" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- I Am Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/i_am_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I Am"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- Spinner for I Am -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <Spinner
+                            android:id="@+id/i_am_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:padding="8dp" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <ViewStub
+                android:id="@+id/view_stub_student1"
+                android:inflatedId="@+id/if_student"
+                android:layout="@layout/if_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:visibility="gone" />
+
+            <!-- ViewStub for Fresher -->
+            <ViewStub
+                android:id="@+id/view_stub_fresher1"
+                android:inflatedId="@+id/if_fresher"
+                android:layout="@layout/if_training_fresher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:visibility="gone" />
+
+            <!-- ViewStub for Working -->
+            <ViewStub
+                android:id="@+id/view_stub_working1"
+                android:inflatedId="@+id/if_working"
+                android:layout="@layout/if_working_professional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:visibility="gone" />
+
+
+
+            <!-- Second CardView for Android Development Experience, Previous Training, Select City, Message -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-8dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <!-- Android Development Experience Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/android_dev_experience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Android Development Experience"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:padding="8dp"
+                            android:layout_marginTop="16dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- Previous Android Development Experience Question -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Do you have any previous Android Development Experience?"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-10dp" />
+
+                    <!-- Spinner for Android Development Experience -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <Spinner
+                            android:id="@+id/android_experience_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:padding="8dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Previous Training Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/previous_training_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Previous Training"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- Previous Training Question -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Have you taken any previous training with Android Development?"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="-10dp" />
+
+                    <!-- Spinner for Previous Training -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <Spinner
+                            android:id="@+id/previous_training_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:padding="8dp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Select City Heading -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/select_city_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select City"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Red Star Icon -->
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/red"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="-5dp"
+                            android:layout_marginLeft="4dp" />
+
+                    </LinearLayout>
+
+                    <!-- Spinner for Select City -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <Spinner
+                            android:id="@+id/select_city_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:padding="12dp" />
+                    </androidx.cardview.widget.CardView>
+
+
+
+                        <TextView
+                            android:id="@+id/message_heading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Message"
+                            android:textSize="15sp"
+                            android:layout_margin="8dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp" />
+
+
+
+                    <!-- Large EditText for Message -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/message_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:hint="Enter your message"
+                            android:padding="12dp"
+                            android:fontFamily="@font/poppins_light"
+                            android:background="@android:color/transparent" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Apply Button CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/apply_button_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <Button
+            android:id="@+id/training_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Apply"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/orange"
+            style="@style/AppButtonStyle"
+            android:fontFamily="@font/poppins_medium" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

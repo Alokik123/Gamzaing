@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UIUXApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/gray</item>
+        <item name="android:navigationBarColor">@color/gray</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="AppButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="CustomSnackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:background">@color/snackbar_default</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppButtonStyle2" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/gray</item>
+    </style>
+
+    <style name="AppButtonStyle1" parent="Widget.MaterialComponents.Button">
+        <item name="background">@drawable/rounded_background_unselected</item>
+        <item name="android:textColor">@color/button_text_unselected</item>
+    </style>
+    <style name="CustomBottomSheetDialog" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog_top</item>
+    </style>
+
+    <style name="Theme.UIUXApp" parent="Base.Theme.UIUXApp" />
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/onboarding_background"
+    android:paddingStart="25dp"
+    android:paddingEnd="25dp">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/layer_list"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+    <ImageView
+        android:id="@+id/training_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/welcome_svg_front"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/training_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Welcome!!"
+        android:textSize="27sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black" />
+    <Button
+        android:id="@+id/b111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="press"/>
+
+    <TextView
+        android:id="@+id/phone_number_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter phone number \nto create your account"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Enter your phone number"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="7dp"
+        android:background="@drawable/edittext_background"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/country_code_spinner"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:spinnerMode="dropdown"/>
+
+            <EditText
+                android:id="@+id/phone_number_edittext"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                android:hint="Enter your phone number"
+                android:textSize="14sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                android:fontFamily="@font/poppins_light"
+                android:maxLength="10"
+                android:background="@android:color/transparent"
+                android:gravity="start|center_vertical" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/send_otp_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Send OTP"
+        android:textSize="16sp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:background="@drawable/button"
+        style="@style/AppButtonStyle" />
+
+</LinearLayout>

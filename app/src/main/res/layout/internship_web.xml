@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9D9D9"
+        android:layout_above="@+id/apply_button_card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="WebViewLayout">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/apply_button_card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back_button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="28dp"
+                        android:src="@drawable/back_button" />
+
+                    <TextView
+                        android:id="@+id/apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="28dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Internship"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/download_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="58dp"
+                        android:src="@drawable/download" />
+
+                    <ImageView
+                        android:id="@+id/share_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="38dp"
+                        android:src="@drawable/share1" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ProgressBar positioned just below the CardView -->
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@android:color/transparent"
+                android:layout_below="@id/apply_button_card1"
+                android:indeterminate="true"
+                android:progressDrawable="@drawable/progress_bar_blue" />
+
+            <!-- WebView positioned below the ProgressBar and above the CardView -->
+            <WebView
+                android:id="@+id/internship_webview"
+                android:layout_width="match_parent"
+                android:layout_height="3070dp"
+                android:layout_below="@id/progress_bar"
+                android:layout_marginTop="0dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/apply_button_card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <Button
+            android:id="@+id/apply_button_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Apply"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            style="@style/AppButtonStyle"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_black"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

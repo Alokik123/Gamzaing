@@ -1,0 +1,6 @@
+<!-- rounded_background_selected.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="4dp" /> <!-- Set the radius here for rounded corners -->
+    <solid android:color="@color/orange" /> <!-- Set the selected color here -->
+</shape>

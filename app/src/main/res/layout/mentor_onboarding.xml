@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding_background"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/training_image"
+        android:layout_width="278dp"
+        android:layout_height="182dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/svg_mentor_front"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/training_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="Mentor"
+        android:textSize="27sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/training_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Become a mentor\nprocess product fast process"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/black" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:src="@drawable/ellipse_unselected"-->
+<!--            android:layout_marginEnd="4dp" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:src="@drawable/ellipse_unselected"-->
+<!--            android:layout_marginEnd="4dp" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:src="@drawable/ellipse_selected" />-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>
